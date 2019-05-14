@@ -1,0 +1,15 @@
+glut.h -->  C:\Program Files (x86)\CodeBlocks\MinGW\include\GL
+glut32.lib --> C:\Program Files (x86)\CodeBlocks\MinGW\lib
+glut32.dll --> C:\Windows\System32
+
+E:\CSE-414\Lab-1\OpenGLtest\OpenGLtest.cbp
+
+Add header file: #include <windows.h> in main.cpp
+
+Settings - Compiler - Toolchain Executable - 
+C:\Program Files (x86)\CodeBlocks\MinGW
+
+Create new project
+File - New- GLUT Project - Go - Next - 
+Project title = Project1
+Select location of MinGW: C:\Program Files (x86)\CodeBlocks\MinGW

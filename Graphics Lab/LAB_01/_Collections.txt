@@ -1,0 +1,58 @@
+OpenGL
+Open Graphics Library (OpenGL)[3][4][5] is a cross-language, cross-platform application programming interface (API) for rendering 2D and 3D vector graphics. The API is typically used to interact with a graphics processing unit (GPU), to achieve hardware-accelerated rendering.
+Silicon Graphics Inc., (SGI) started developing OpenGL in 1991 and released it in January 1992;[6] applications use it extensively in the fields of computer-aided design (CAD), virtual reality, scientific visualization, information visualization, flight simulation, and video games. OpenGL is managed by the non-profit technology consortium Khronos Group.
+
+Code::Blocks 
+Code::Blocks is a free, open-source cross-platform IDE that supports multiple compilers including GCC, Clang and Visual C++. It is developed in C++ using wxWidgets as the GUI toolkit. Using a plugin architecture, its capabilities and features are defined by the provided plugins. Currently, Code::Blocks is oriented towards C, C++, and Fortran. It has a custom build system and optional Make support.
+
+MinGW 
+A compiler suite is what Code::Blocks uses to turn the code you type into it into numbers that the computer understands. As a compiler is a very complex undertaking it is not part of Code::Blocks itself but rather is a separate project that Code::Blocks then uses.
+
+GLUT
+The OpenGL Utility Toolkit (GLUT) is a library of utilities for OpenGL programs, which primarily perform system-level I/O with the host operating system. Functions performed include window definition, window control, and monitoring of keyboard and mouse input. Routines for drawing a number of geometric primitives (both in solid and wireframe mode) are also provided, including cubes, spheres and the Utah teapot. GLUT also has some limited support for creating pop-up menus.
+
+
+
+glClearColor
+To set the clear color, we use the OpenGL command glClearColor(); An example follows:
+glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+This command sets the clear color to be black. (0 red, 0 green, 0 blue, and 0 alpha).
+
+
+glOrtho
+
+glOrtho — multiply the current matrix with an orthographic matrix
+void glOrtho(	GLdouble left,
+ 	GLdouble right,
+ 	GLdouble bottom,
+ 	GLdouble top,
+ 	GLdouble nearVal,
+ 	GLdouble farVal);
+Parameters
+
+left, right
+Specify the coordinates for the left and right vertical clipping planes.
+
+bottom, top
+Specify the coordinates for the bottom and top horizontal clipping planes.
+
+nearVal, farVal
+Specify the distances to the nearer and farther depth clipping planes. These values are negative if the plane is to be behind the viewer.
+
+glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
+it means that the x, y and z range are from -1 to 1?
+
+
+glClear sets the bitplane area of the window to values previously selected by glClearColor, glClearDepthf, and glClearStencil.
+GL_COLOR_BUFFER_BIT
+Indicates the buffers currently enabled for color writing.
+
+
+glColor3f function. Sets the current color.
+
+void glColor3b(	GLbyte  	red,
+ 	GLbyte  	green,
+ 	GLbyte  	blue);
+
+red, green, blue
+Specify new red, green, and blue values for the current color.
